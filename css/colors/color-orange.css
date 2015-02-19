@@ -1,0 +1,231 @@
+
+a { color: #F4A622; outline: none;}
+
+a:hover { color:#D5901C; outline: none;}
+
+blockquote {
+    border-left: 3px solid #F4A622;
+}
+.nav-bg-color{
+    background-color: #161C2A ;
+}
+.btn:hover, .btn:focus{
+    border: 4px solid #F4A622;
+    background: #F4A622;
+    color: #ffffff;
+    outline: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: transparent;
+    color: #F4A622 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #ffffff;
+}
+
+.navbar-nav>li .sub-menu>li>a:hover{
+    background: #161E2B;
+    color: #F4A622;
+} 
+.navbar-toggle{
+    color: #F4A622;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    color: #F4A622;
+    background-color: transparent;
+}
+
+.toggle_nav_button{
+    background-color: #F4A622;
+}
+.about-slider .owl-prev:hover{
+    background-color:#F4A622; 
+}
+.about-slider .owl-next:hover{
+    background-color:#F4A622; 
+}
+.status-circle:hover{
+    border: 10px solid #F4A622;
+}
+.profile:hover .profile-name .divider{
+    background-color: #F4A622;
+}
+.profile-social i:hover{
+    color: #F4A622;
+}
+.profile:hover .profile-img img{
+    border: 7px solid #F4A622;
+}
+.skillbar-bar{
+    background-color: #F4A622;
+}
+.box-icon i,
+.service-container:hover .service-icon i{
+    color: #F4A622;
+}
+.service-box-btn:hover,
+.service-box:hover .box-icon,
+.service-icon{
+    background-color: #F4A622;
+}
+
+.service-box-btn:hover {
+        color: #fff ;
+    }
+
+.price-table .btn:hover,
+.price-table:hover .table-icon,
+.price-table.active .table-icon{
+    background-color: #F4A622;
+}
+.price-number{
+    color: #F4A622;
+}
+#options li a.selected,#filters li a:hover{
+    background-color: #F4A622;
+}
+.project-image:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.masonry-post-more:hover,
+.btn-masonry:hover,
+.btn:hover {
+    background-color: #F4A622;
+    color: #ffffff;
+}
+.contact-icon{
+    background-color: #F4A622;
+}
+.contact-form .submit,
+.contact-form .submit:hover{
+    border-color: #e74c3c;
+}
+.contact-form .submit:hover{
+    background-color: #e74c3c;
+}
+
+.accordion dt:hover{
+    color: #F4A622;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+    color: #F4A622;
+}
+
+.alert a {
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #91c134;
+    color: #fff;
+    border-color: #91c134;
+}
+
+.btn-success:hover {
+    background-color: transparent !important;
+    color: #91c134 !important;
+    border-color: #91c134 !important; 
+}
+
+/* info button */
+.btn-info {
+    background-color: #53b6b7;
+    color: #fff;
+    border-color: #53b6b7;
+}
+
+.btn-info:hover {
+    background-color: transparent;
+    color: #53b6b7 !important;
+    border-color: #53b6b7 !important; 
+}
+
+/* warning button */
+.btn-warning {
+    background-color: #f5a700;
+    color: #fff;
+    border-color: #f5a700;
+}
+
+.btn-warning:hover {
+    background-color: transparent;
+    color: #f5a700 !important;
+    border-color: #f5a700 !important; 
+}
+
+/* danger button */
+.btn-danger {
+    background-color: #d83e2f;
+    color: #fff;
+    border-color: #d83e2f;
+}
+
+.btn-danger:hover {
+    background-color: transparent;
+    color: #d83e2f !important;
+    border-color: #d83e2f !important; 
+}
+
+/* danger button */
+.btn-fancy {
+    background-color: #5f53b7;
+    color: #fff;
+    border-color: #5f53b7;
+}
+
+.btn-fancy:hover {
+    background-color: transparent;
+    color: #5f53b7 !important;
+    border-color: #5f53b7 !important;
+}
+
+/* animated btn */
+.btn-animated {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animated span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.btn-animated:before {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    padding-top: 10%;
+
+    font-family: 'FontAwesome';
+    content: "\f054";
+    font-size: 16px;
+    color: #5f53b7;
+    opacity: 0;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-animated:hover span {
+    -webkit-transform: translateX(200%);
+    -moz-transform:    translateX(200%);
+    -ms-transform:     translateX(200%);
+    -o-transform:      translateX(200%);
+    transform:         translateX(200%);
+}
+
+.btn-animated:hover:before {
+    left: 50%;
+    opacity: 1;
+}
