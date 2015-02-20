@@ -73,6 +73,9 @@ session_destroy();
 
 <script>
 $(document).ready(function() {
+		$.fn.checknet();
+checknet.config.checkInterval = 1000;
+checknet.config.warnMsg = “There is no connection!!”;
     $('#login').click(function(){
 	var username = $('#username').val();
 	var	password = $('#password').val();
@@ -109,9 +112,7 @@ $(document).ready(function() {
 		});
 		return false;
 	}
-	$.fn.checknet();
-checknet.config.checkInterval = 1000;
-checknet.config.warnMsg = “There is no connection!!”;
+
 });
 });
 </script>
