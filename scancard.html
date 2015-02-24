@@ -1,10 +1,4 @@
 
-<?php require_once('Connections/conn.php'); ?>
-<?php 
-include("checklogin.php");
-$userp = ucfirst($_SESSION['username']);
-$store = $_SESSION['storename'];
-?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -96,7 +90,7 @@ body {
   
 
 <!-- Google Maps API -->
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    
 
     <!-- All Plugins -->
     <script src="js/jQueryPlugins/all-min.js"></script>
@@ -107,7 +101,7 @@ body {
 var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "integer", {validateOn:["change"]});
     </script>       
         
-   <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
