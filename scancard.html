@@ -50,16 +50,11 @@ body {
     <!-- Modernizr 
     ================================================== -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-      <script src="js/mainoneori.js"></script>
-      <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
-      
-
+<script src="js/mainoneori.js"></script>
     <!-- Color Skins 
     ================================================== -->
     <link rel="stylesheet" href="css/colors/color-red.css" title="red">
-    
-    <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
+    <style type="text/css">
     body,td,th {
 	font-family: "Open Sans", sans-serif;
 }
@@ -95,11 +90,7 @@ body {
     <script src="js/jQueryPlugins/all-min.js"></script>
 
     <!-- Custom Javascript File -->
-    <script src="js/main.js"></script>
-<script type="text/javascript">
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "integer", {validateOn:["change"]});
-    </script>       
-        
+<script src="js/main.js"></script>
    <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   -->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
@@ -111,10 +102,6 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "inte
 
 </head>
 <body>
-
-<!-- Preloader -->
-    <div class="mask"></div>
-<!-- Preloader End-->
 
 
 
@@ -157,49 +144,27 @@ var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "inte
 <!-- SECTION: Home -->
 <!-- SECTION: Home End -->
 
-<!-- SECTION: About --><!-- SECTION: About End -->
 
-
- 
-<!-- Parallax --><!-- Parallax End-->
- 
-<!-- SECTION: TEAM --><!-- SECTION: TEAM END-->
-
-
-
-
-<!-- SECTION: SERVICE -->
 <br/>
 <br/>
-
-  <form name="scancardform" method="post" action="verifycard.php">
-  <br/>
-  <br/>
-  
-          <div class="service-box" data-animation="fadeInLeft" data-animation-delay="400"><br/>
-  <br/>
-  
-        <div class="box-icon"> <i class="fa fa-pencil"></i></div>
-        <!-- End .box-icon -->
-        <h5>Enter Card Details</h5>
-        
-        <div id="deviceready" class="blink">
+<div class="app">
+            
+            <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready<span class="event listening">
-                  <input name="cardno" type="text" id="cardno" maxlength="12">
-                </span></p>
+                <p class="event received" align="center">Device is Ready</p>
             </div>
-         <p><a href="#" class="topcoat-button" id="scan">Click Here to Scan Card</a></p>
-        
-        <p>
-          <label for="Cardid"></label>
-          <span id="sprytextfield1"><span class="textfieldRequiredMsg">Card Number is required.</span><span class="textfieldInvalidFormatMsg">Number Format Only</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span></p>
-        <p>
-          <input name="submit" type="submit" class="btn-primary" id="validatecard" value="Validate Card">
-        </p>
-      </div>
-    
-  </form>
+            <p align="center"><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
+<form name="scancardform" method="post" action="http://192.168.1.6/test/papp/verifycard.php">
+  <br/>
+  <br/>
+     <h5> Card Number </h5>
+                <input name="cardno" type="text" id="cardno" size="30">
+              </p>
+              <p>
+                <input type="submit" name="submit" id="submit" value="Submit">
+              </p>
+    </form>
+
   </div>
   <div id="ewarn"></div>
 
