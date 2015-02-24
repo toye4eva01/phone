@@ -64,18 +64,11 @@ body {
     </style>
 
        <link rel="stylesheet" href="css/checknet.css"> 
-     
+      <link rel="stylesheet" href="css/index.css"> 
      
        <!-- Scripts
     ================================================== -->
- <script src='js/jquery-1.9.1.min.js'></script>
-        <script src="js/jquery.checknet-1.6.min.js"></script>
- 
-<script>
-            $(document).ready(function(){
-                $.fn.checknet();
-            });
-        </script>
+
     <!-- jQuery Library -->
    
     <!-- Boostrap Scripts -->
@@ -84,14 +77,14 @@ body {
   
 
 <!-- Google Maps API -->
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  
 
     <!-- All Plugins -->
     <script src="js/jQueryPlugins/all-min.js"></script>
 
     <!-- Custom Javascript File -->
 <script src="js/main.js"></script>
-   <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -142,30 +135,28 @@ body {
 <!-- Header End -->
 
 <!-- SECTION: Home -->
-<!-- SECTION: Home End -->
 
-
-<br/>
-<br/>
 <div class="app">
-            
+            <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received" align="center">Device is Ready</p>
+                <p class="event received">Device is Ready</p>
             </div>
-            <p align="center"><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
-<form name="scancardform" method="post" action="http://192.168.1.6/test/papp/verifycard.php">
-  <br/>
-  <br/>
-     <h5> Card Number </h5>
+            <p><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
+            
+            <form name="form1" method="post" action="http://premiumincentives.biz/propetrol/verifycard.php">
+              <p>&nbsp;</p>
+              <p>
+                <label for="Cardno">Card Number</label>
                 <input name="cardno" type="text" id="cardno" size="30">
               </p>
               <p>
                 <input type="submit" name="submit" id="submit" value="Submit">
               </p>
-    </form>
-
-  </div>
+            </form>
+            
+            <p>&nbsp;</p>
+            <p><a href="#" class="topcoat-button" id="encode">ENCODE</a></p>
   <div id="ewarn"></div>
 
 </div>
@@ -186,7 +177,7 @@ body {
     
 <!-- Footer End -->
 
-    <!-- Scripts
+<!-- Scripts
   
 </body>
 </html>
